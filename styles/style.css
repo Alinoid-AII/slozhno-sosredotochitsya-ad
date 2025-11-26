@@ -305,6 +305,11 @@ html {
   grid-column: 2 / span 2;
 }
 
+.how-text-block__heading {
+  margin-block-end: 10px;
+  margin-block-start: 20px;
+}
+
 @media (min-width: 1024px) {
   .header__logo {
     line-height: 0.825;
@@ -344,7 +349,7 @@ html {
     padding-inline-end: 0;
   }
 
-    .how-text-block__heading {
+  .how-text-block__heading {
     margin-block-end: 10px;
     margin-block-start: 20px;
   }
