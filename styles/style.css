@@ -215,16 +215,20 @@ html {
 
 .text-block__paragraph {
   color: var(--main-text-color);
-  margin-block-start: 10px;
   line-height: var(--main-line-height);
 }
 
 .why {
   display: grid;
   grid-template-columns: 33% 67%;
-  padding-inline-end: var(--main-gap);
   padding-block-start: 60px;
   margin: 0 20px;
+}
+
+.text-block-why {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .text-block__paragraph-why {
@@ -259,6 +263,7 @@ html {
   grid-template-columns: repeat(3, 1fr);
   gap: var(--main-gap);
   margin: 0 20px;
+  padding-block-end: 60px;
 }
 
 .grid-heading {
@@ -276,29 +281,24 @@ html {
 
 .grid__image:first-of-type {
   grid-column: span 2;
-  min-block-size: 260px;
 }
 
 .grid__image:nth-of-type(2) {
   grid-column: 3;
   grid-row: span 2;
-  min-block-size: 595px;
 }
 
 .grid__image:nth-of-type(3) {
   grid-column: 1;
   grid-row: span 2;
-  min-block-size: 768px;
 }
 
 .grid__image:nth-of-type(4) {
   grid-column: 2;
-  min-block-size: 315px;
 }
 
 .grid__image:nth-of-type(5) {
   grid-column: 2 / span 2;
-  min-block-size: 428px;
 }
 
 @media (min-width: 1024px) {
